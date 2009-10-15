@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Christoffer Winterkvist's Bundle</string>
+	<key>ordering</key>
+	<array>
+		<string>9C8AEAB8-371A-47E5-AAE9-39F79E56B322</string>
+		<string>8D734B71-A48E-4066-9583-E8F2DA9316F7</string>
+		<string>BA0A8084-8BD1-4361-AA8C-D4D2FCAB9734</string>
+		<string>EDEC770B-73BB-4BD4-BCEA-2AFA2FB7D89C</string>
+		<string>CA055830-2AB4-4400-8099-79A8FF89B72C</string>
+		<string>D7665B12-9BB2-498A-9FDE-4BD5064AB3C0</string>
+	</array>
+	<key>uuid</key>
+	<string>CC6BE0A0-F916-4FA0-B333-C9E801693ABD</string>
+</dict>
+</plist>
