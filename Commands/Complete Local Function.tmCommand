@@ -6,21 +6,19 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/bin/bash
-cmd=$(grep -P -i -o 'function ([A-Za-z0-9]+)' $TM_FILEPATH | grep -P -i -o '\s[A-Za-z0-9]+') # | tr -d "\n" # &gt; functions.txt
+cmd=$(grep -P -i -o 'function ([A-Za-z0-9]+)' $TM_FILEPATH | grep -P -i -o '\s[A-Za-z0-9]+' | grep -P -i -o '[A-Za-z0-9]+') # | tr -d "\n" # &gt; functions.txt
 for i in $cmd; do	
   if [ -z "$choices" ]; then	
-     echo "$choices"	
-     choices="({ display = $i; }"	
+     choices="({ display = '$i();'; }"	
   else	
-     choices="${choices}, { display = $i; }"	
+     choices="${choices}, { display = '$i();'; }"	
   fi	
 done
-#echo $choices
 $DIALOG popup --suggestions "$choices)"</string>
 	<key>input</key>
 	<string>document</string>
 	<key>keyEquivalent</key>
-	<string>~m</string>
+	<string>~t</string>
 	<key>name</key>
 	<string>Complete local function</string>
 	<key>output</key>
